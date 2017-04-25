@@ -20,4 +20,12 @@ public class SingletonTest {
 
 	}
 
+	@Test
+	public void testSingleton_lazy() {
+		Singleton_lazy singleton1 = Singleton_lazy.getinstance();
+		System.out.println(singleton1.hashCode());
+		Singleton_lazy singleton2 = Singleton_lazy.getinstance();
+		System.out.println(singleton2.hashCode());
+	}
+
 }
